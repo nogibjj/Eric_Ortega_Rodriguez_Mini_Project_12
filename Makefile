@@ -1,32 +1,29 @@
-install:
-	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+# Define the image name
+IMAGE_NAME = de_demo
+DOCKER_ID_USER = johncoogan53
 
-test:
-	python -m pytest -vv --cov=main --cov=mylib test_*.py
+# Build the Docker image
+build:
+	docker build -t $(IMAGE_NAME) .
 
-format:	
-	black *.py 
+# Run the Docker container
+run:
+	docker run -p 5000:5000 $(IMAGE_NAME)
 
-lint:
-	ruff check *.py mylib/*.py
+# Remove the Docker image
+clean:
+	docker rmi $(IMAGE_NAME)
 
-container-lint:
-	docker run --rm -i hadolint/hadolint < Dockerfile
+image_show:
+	docker images
 
-refactor: format lint
+container_show:
+	docker ps
 
-# Docker
-deploy:
-	@echo "Deploying application..."
-	docker build -t my-app .
-	docker run -d -p 80:80 my-app
+push:
+	docker login
+	docker tag $(IMAGE_NAME) $(DOCKER_ID_USER)/$(IMAGE_NAME)
+	docker push $(DOCKER_ID_USER)/$(IMAGE_NAME):latest
 
-# running all checks 
-all: install lint test format
-
-# used for multiple tasks
-pre-deploy: install refactor test
-
-# deploy
-deploy-all: pre-deploy deploy
+login:
+	docker login -u ${DOCKER_ID_USER}
