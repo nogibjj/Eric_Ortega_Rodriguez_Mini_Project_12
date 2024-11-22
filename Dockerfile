@@ -1,7 +1,7 @@
-FROM alpine:latest
+FROM  python:3.9-slim
 WORKDIR /app
-
-# Remove or replace this line if repeat.sh is not required
-# COPY repeat.sh /app
-
-RUN apk update && apk add bash
+COPY . /app/
+RUN pip install --no-cache-dir -r requirements.txt
+EXPOSE 80
+ENV FLASK_APP = app.py
+CMD ["python", "app.py"]
