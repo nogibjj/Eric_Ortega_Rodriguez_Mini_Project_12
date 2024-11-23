@@ -6,18 +6,23 @@ DOCKER_ID_USER = ericiortega
 build:
 	docker build -t $(IMAGE_NAME) .
 
+# docker run -d -p 5005:5000 --name $(IMAGE_NAME)_container $(IMAGE_NAME)
+
 # Run the Docker container
 run:
-	docker run -d -p 8000:80 --name $(IMAGE_NAME)_container $(IMAGE_NAME)
+	docker run -p 5005:5000 $(IMAGE_NAME)
 
 # Stop and remove the running Docker container
 stop:
 	docker stop $(IMAGE_NAME)_container || true
 	docker rm $(IMAGE_NAME)_container || true
-
+#  stop
 # Remove the Docker image
-clean: stop
-	docker rmi $(IMAGE_NAME)
+
+clean:
+	-docker ps -a -q --filter ancestor=$(IMAGE_NAME) | xargs -r docker stop
+	-docker ps -a -q --filter ancestor=$(IMAGE_NAME) | xargs -r docker rm
+	-docker images -q $(IMAGE_NAME) | xargs -r docker rmi -f
 
 # Show all Docker images
 image_show:
