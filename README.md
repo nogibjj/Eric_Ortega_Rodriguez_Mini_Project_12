@@ -2,7 +2,9 @@
 
 # Mini Project #12: Vowel and Consonant Counter Application
 
-![Vowel and Consonant Counter](image.png)
+<div align="center">
+    <img src="image.png" alt="Vowel and Consonant Counter" width="600">
+</div>
 
 ### Author: Eric Ortega Rodriguez
 
