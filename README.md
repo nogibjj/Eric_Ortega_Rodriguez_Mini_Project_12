@@ -1,49 +1,67 @@
 [![CI](https://github.com/nogibjj/Eric_Ortega_Rodriguez_Mini_Project_6/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Eric_Ortega_Rodriguez_Mini_Project_6/actions/workflows/cicd.yml)
-# Mini Project #12 
-# Vowel and Consonant Counter Application
-## Eric Ortega Rodriguez
+
+# Mini Project #12: Vowel and Consonant Counter Application
+
+![Vowel and Consonant Counter](image.png)
+
+### Author: Eric Ortega Rodriguez
+
+---
 
 ## Overview
 
-This is a simple Python web application built using the Flask framework. The application provides functionality to count the number of vowels and consonants in a word submitted through a web form. 
+This project is a **simple yet powerful Python web application** developed with the Flask framework. Its primary function is to count the number of vowels and consonants in a word entered through a web form.
 
-Additionally, the application is containerized using Docker to ensure portability and ease of deployment. The goal is to demonstrate running the application both locally within a Docker container and as part of a CI/CD pipeline that builds and pushes the Docker image to Docker Hub.
+In addition to the core functionality, the application demonstrates:
+- **Containerization** using Docker for seamless deployment.
+- **Integration into a CI/CD pipeline** to automate building, testing, and deploying the app.
+- **Publishing Docker images to Docker Hub** for enhanced portability.
+
+This project showcases modern application development practices, making it an excellent demonstration of scalable and portable Python-based web applications.
+
+---
 
 ## Features
 
-- **Web-based UI**:
-  - Submit a word through a form on the web page.
-  - View the counts of vowels and consonants in the word.
+- **Interactive Web-based UI**:
+  - Submit a word through an intuitive web form.
+  - Instantly view the count of vowels and consonants in the entered word.
 
-- **Containerized Application**:
-  - Easily deployable using Docker.
-  - Includes a `Dockerfile` to package the application and its dependencies.
+- **Lightweight and Containerized**:
+  - Simplified deployment with Docker.
+  - Includes a well-structured `Dockerfile` for building reproducible images.
 
-- **CI/CD Integration**:
-  - Automatically builds and tests the application as part of a CI/CD pipeline.
-  - Publishes the Docker image to Docker Hub.
+- **Robust CI/CD Integration**:
+  - Automates the building, testing, and deployment process.
+  - Publishes Docker images to Docker Hub for effortless sharing.
+
+---
 
 ## How It Works
 
-1. The application provides a simple web interface where users can input a word.
-2. The backend processes the word to calculate the number of vowels and consonants.
-3. The results are displayed on the same page.
+1. **Input**: Users submit a word via the web interface.
+2. **Processing**: The application calculates the number of vowels and consonants in the input.
+3. **Output**: Results are displayed on the same page in a clean and user-friendly format.
 
-### Example Workflow:
+### Example Workflow
 
-- Input: `Flask`
-- Output:
-  - Vowels: 1
-  - Consonants: 4
+- **Input**: `Flask`
+- **Output**:
+  - Vowels: `1`
+  - Consonants: `4`
+
+---
 
 ## Usage
 
 ### Running Locally
 
 #### Prerequisites:
-- Python 3.9 or higher
-- Flask (specified in `requirements.txt`)
+- Python 3.9 or higher.
+- Install dependencies listed in `requirements.txt`.
 
-1. Install dependencies:
+#### Steps:
+1. Clone the repository:
    ```bash
-   pip install -r requirements.txt
+   git clone <repository-url>
+   cd <repository-directory>
