@@ -57,10 +57,10 @@ This project showcases modern application development practices, making it an ex
     <img src="example_output.png" alt="Output Example" width="500">
 </div>
 
-- **Input**: `Flask`
+- **Input**: `apple`
 - **Output**:
-  - Vowels: `1`
-  - Consonants: `4`
+  - Vowels: `2`
+  - Consonants: `3`
 
 ---
 
