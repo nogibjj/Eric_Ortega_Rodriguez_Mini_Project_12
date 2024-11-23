@@ -19,8 +19,6 @@ In addition to the core functionality, the application demonstrates:
 - **Integration into a CI/CD pipeline** to automate building, testing, and deploying the app.
 - **Publishing Docker images to Docker Hub** for enhanced portability.
 
-Showcases modern application development practices, making it an excellent demonstration of scalable and portable Python-based web applications.
-
 ---
 
 ## Features
