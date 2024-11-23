@@ -28,5 +28,5 @@ ENV FLASK_APP=app.py
 # 0.0.0.0 sets the application to listen on all network interfaces
 
 #a more secure option would be to specify the exact IP you plan to use 
-# (e.g.API gateway interface)
+# (e.g.API gateway interface) 
 CMD ["flask", "run", "--host=0.0.0.0"]
