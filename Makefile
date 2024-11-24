@@ -4,7 +4,7 @@ DOCKER_ID_USER = ericiortega
 
 # Build the Docker image
 build:
-	docker build -t $(IMAGE_NAME) .
+	docker build -t $(IMAGE_NAME):latest .
 
 # docker run -d -p 5005:5000 --name $(IMAGE_NAME)_container $(IMAGE_NAME)
 
