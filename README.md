@@ -12,7 +12,7 @@
 
 ## Overview
 
-This project is a **simple yet powerful Python web application** developed with the Flask framework. Its primary function is to count the number of vowels and consonants in a word entered through a web form
+This project is a **simple yet powerful Python web application** developed with the Flask framework. Its primary function is to count the number of vowels and consonants in a word entered through a web form.
 
 In addition to the core functionality, the application demonstrates:
 - **Containerization** using Docker for seamless deployment.
