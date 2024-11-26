@@ -1,6 +1,5 @@
-# Mini Project #12: Vowel and Consonant Counter Application
-
 [![Build and Push Docker Image](https://github.com/nogibjj/Eric_Ortega_Rodriguez_Mini_Project_12/actions/workflows/build.yml/badge.svg)](https://github.com/nogibjj/Eric_Ortega_Rodriguez_Mini_Project_12/actions/workflows/build.yml)
+# Mini Project #12: Vowel and Consonant Counter Application
 
 <div align="center">
     <img src="image.png" alt="Vowel and Consonant Counter" width="600">
