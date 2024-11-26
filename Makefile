@@ -33,7 +33,7 @@ container_show:
 	docker ps -a
 
 # Push the Docker image to Docker Hub
-push: login
+push: 
 	docker tag $(IMAGE_NAME) $(DOCKER_ID_USER)/$(IMAGE_NAME):latest
 	docker push $(DOCKER_ID_USER)/$(IMAGE_NAME):latest
 
