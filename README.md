@@ -75,5 +75,7 @@ In addition to the core functionality, the application demonstrates:
    ```bash
    git clone <repository-url>
    cd <repository-directory>
-2.
-3.
+
+#### Uploaded in Docker
+
+![alt text](image-1.png)
